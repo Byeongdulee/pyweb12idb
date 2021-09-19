@@ -22,6 +22,11 @@
     >wb.get("Lee_01", 1)
     
     This will download all 1D files with the file index 1. There can be many files with the same file index with different extension numbers.
+    But, due to the memory, it wouldn't download all of them. If there are more than 35 files, chance is high to have incomplete file download.
+    In this case, you would need to delete the last data set.
+    
+    >del(wb.web12idb.data[-1])
+    
  4. If you want to a specific extension number, for example 3 (This means your 2D file name is something like "Saaa_bbb_00001_00003.tif");
     
     >wb.get("Lee_01", 1, 3)
