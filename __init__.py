@@ -1,0 +1,1 @@
+from pyweb12idb.web12idb import *
