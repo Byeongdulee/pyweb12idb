@@ -1,6 +1,5 @@
 # pyweb12idb
- A python tool to retrieve the APS 12IDB 1D data
- Only the current beamline users can download data using this tool and a passcode is required.
+ A python tool to retrieve the APS 12IDB 1D data. Only the current beamline users can download data using this tool. A passcode is required, and ask the beamline staff for the passcode. It works only when the beamline data transfer server is running.
 
 # Requirement
  python version 3 and higher.
