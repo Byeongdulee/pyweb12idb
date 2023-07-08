@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-from numpy.core.arrayprint import DatetimeFormat
 import requests
 import numpy as np
 import re
@@ -26,6 +25,7 @@ def _get(mydir, fileindex, extn=-1):
         for ext in extn:
             findex = "%s%i;"%(findex, ext)
         findex = findex[0:-1]+"]"
+        print(findex)
     url = f"https://12idb.xray.aps.anl.gov/PVapp/getdata:dir={mydir},findex={findex}"
     dt = requests.get(url)
     myd = dt.json()
